@@ -10,7 +10,7 @@ Key Features:
 
 🔹 Online Version
 If you have an active internet connection, you can directly access the simulation through the following link:
-👉 https://haoqianzou.github.io/International-Business-Tariff-and-inverstment-simulation/
+👉 https://haoqianzou.github.io/International-Business-Tariff-and-investment-simulation/
 
 
 🔹 Offline Version
