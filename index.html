@@ -381,13 +381,12 @@
             <h3><span class="emoji-bullet">📜</span>Game Rules</h3>
             <ul style="line-height: 1.6; margin-left: 20px;">
                 <li><strong>Round System:</strong> The game consists of 3 independent rounds. At the end of each round, all assets are automatically liquidated, and players start fresh in the next round.</li>
-                <li><strong>Asset Allocation:</strong> In each round, players must allocate 100% of their portfolio across five asset classes:
+                <li><strong>Asset Allocation:</strong> In each round, players must allocate 100% of their portfolio across four asset classes:
                     <ul style="margin-left: 20px; margin-top: 5px;">
-                        <li>Tech Stocks</li>
-                        <li>Industrial Stocks</li>
-                        <li>Gold</li>
-                        <!-- <li>Bonds</li> -->
-                        <li>International Stocks</li>
+                        <li>Tech Stocks (e.g., semiconductor manufacturers, software companies, EV makers)</li>
+                        <li>Industrial Stocks (e.g., manufacturing, aerospace, agricultural machinery)</li>
+                        <li>Safe Assets (e.g., government bonds, gold, defensive utilities)</li>
+                        <li>International Stocks (e.g., European and Asian market ETFs, emerging markets)</li>
                     </ul>
                 </li>
                 <li><strong>Simplified Assumptions:</strong>
@@ -423,6 +422,13 @@
                 <h2>Round 1: U.S.-China tariff escalation</h2>
                 <button class="reset-round" onclick="resetRound(1)">Reset Round 1</button>
             </div>
+            <div style="margin: 15px 0; padding: 15px; background: rgba(13, 28, 51, 0.9); border-radius: 4px;">
+                <p style="color: #e6f1ff; line-height: 1.6; margin: 0;">
+                    The U.S. announces a 145% tariff on Chinese EVs, solar panels, and semiconductors. 
+                    China retaliates with 125% tariffs on U.S. aircraft and agricultural products. 
+                    Markets react sharply as global trade expectations collapse.
+                </p>
+            </div>
             <div class="players-container">
                 <!-- Market Info -->
                 <div class="market-info">
@@ -449,7 +455,7 @@
                                     <td>Exports hit by retaliation; costs increase.</td>
                                 </tr>
                                 <tr>
-                                    <td>Gold</td>
+                                    <td>Safe Assets</td>
                                     <td class="positive-return">+5%</td>
                                     <td>Investors rush to safe-haven assets.</td>
                                 </tr>
@@ -473,7 +479,7 @@
                         </div>
                         <div class="color-item">
                             <div class="color-box" style="background-color: #ffd700;"></div>
-                            <span class="color-label">Gold</span>
+                            <span class="color-label">Safe Assets</span>
                         </div>
                         <div class="color-item">
                             <div class="color-box" style="background-color: #a3a1ff;"></div>
@@ -498,7 +504,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_1_1" min="0" max="100" value="20" onchange="updateAllocation(1, 1)">
                         <span>%</span>
                     </div>
@@ -534,7 +540,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_1_2" min="0" max="100" value="20" onchange="updateAllocation(1, 2)">
                         <span>%</span>
                     </div>
@@ -570,7 +576,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_1_3" min="0" max="100" value="20" onchange="updateAllocation(1, 3)">
                         <span>%</span>
                     </div>
@@ -595,8 +601,15 @@
         <!-- Round 2 -->
         <div class="round-container">
             <div class="round-title">
-                <h2>Round 2: Dollar strengthens, Europe gains</h2>
+                <h2>Round 2: Foreign Confidence Grows as Dollar Weakens</h2>
                 <button class="reset-round" onclick="resetRound(2)">Reset Round 2</button>
+            </div>
+            <div style="margin: 15px 0; padding: 15px; background: rgba(13, 28, 51, 0.9); border-radius: 4px;">
+                <p style="color: #e6f1ff; line-height: 1.6; margin: 0;">
+                    Investors lose confidence in U.S. policy stability after aggressive tariff escalation. 
+                    The dollar weakens, and capital flows into international markets increase. 
+                    European and emerging markets gain momentum as global investors seek alternatives.
+                </p>
             </div>
             <div class="players-container">
                 <!-- Market Info -->
@@ -615,23 +628,23 @@
                             <tbody>
                                 <tr>
                                     <td>Tech</td>
-                                    <td class="negative-return">-2%</td>
-                                    <td>Strong dollar reduces overseas earnings value.</td>
+                                    <td class="negative-return">-3%</td>
+                                    <td>Still pressured by trade uncertainty and supply disruptions</td>
                                 </tr>
                                 <tr>
                                     <td>Industrial</td>
-                                    <td class="negative-return">-3%</td>
-                                    <td>Exports become less competitive globally.</td>
+                                    <td class="negative-return">-2%</td>
+                                    <td>Less damage this round, but sentiment remains weak</td>
                                 </tr>
                                 <tr>
-                                    <td>Gold</td>
-                                    <td class="positive-return">+2%</td>
-                                    <td>Maintains value as currency hedge.</td>
+                                    <td>Safe Assets</td>
+                                    <td class="positive-return">+3%</td>
+                                    <td>Dollar weakness and continued uncertainty boost demand</td>
                                 </tr>
                                 <tr>
                                     <td>International</td>
                                     <td class="positive-return">+6%</td>
-                                    <td>European stocks gain from stronger Euro.</td>
+                                    <td>Strong capital inflows as investors diversify out of U.S. markets</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -648,7 +661,7 @@
                         </div>
                         <div class="color-item">
                             <div class="color-box" style="background-color: #ffd700;"></div>
-                            <span class="color-label">Gold</span>
+                            <span class="color-label">Safe Assets</span>
                         </div>
                         <div class="color-item">
                             <div class="color-box" style="background-color: #a3a1ff;"></div>
@@ -673,7 +686,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_2_1" min="0" max="100" value="20" onchange="updateAllocation(2, 1)">
                         <span>%</span>
                     </div>
@@ -709,7 +722,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_2_2" min="0" max="100" value="20" onchange="updateAllocation(2, 2)">
                         <span>%</span>
                     </div>
@@ -745,7 +758,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_2_3" min="0" max="100" value="20" onchange="updateAllocation(2, 3)">
                         <span>%</span>
                     </div>
@@ -770,8 +783,15 @@
         <!-- Round 3 -->
         <div class="round-container">
             <div class="round-title">
-                <h2>Round 3: Trade truce + inflation surprise</h2>
+                <h2>Round 3: Trade truce</h2>
                 <button class="reset-round" onclick="resetRound(3)">Reset Round 3</button>
+            </div>
+            <div style="margin: 15px 0; padding: 15px; background: rgba(13, 28, 51, 0.9); border-radius: 4px;">
+                <p style="color: #e6f1ff; line-height: 1.6; margin: 0;">
+                    The U.S. and China agree to a temporary 90-day tariff truce. Markets rally on optimism. 
+                    <!-- However, U.S. inflation data unexpectedly comes in high, sparking concern about interest rate hikes 
+                    and eroding bond market confidence. -->
+                </p>
             </div>
             <div class="players-container">
                 <!-- Market Info -->
@@ -799,7 +819,7 @@
                                     <td>Trade resolution improves business outlook.</td>
                                 </tr>
                                 <tr>
-                                    <td>Gold</td>
+                                    <td>Safe Assets</td>
                                     <td class="negative-return">-3%</td>
                                     <td>Safe haven demand falls as risks decrease.</td>
                                 </tr>
@@ -823,7 +843,7 @@
                         </div>
                         <div class="color-item">
                             <div class="color-box" style="background-color: #ffd700;"></div>
-                            <span class="color-label">Gold</span>
+                            <span class="color-label">Safe Assets</span>
                         </div>
                         <div class="color-item">
                             <div class="color-box" style="background-color: #a3a1ff;"></div>
@@ -848,7 +868,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_3_1" min="0" max="100" value="20" onchange="updateAllocation(3, 1)">
                         <span>%</span>
                     </div>
@@ -884,7 +904,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_3_2" min="0" max="100" value="20" onchange="updateAllocation(3, 2)">
                         <span>%</span>
                     </div>
@@ -920,7 +940,7 @@
                         <span>%</span>
                     </div>
                     <div class="allocation-row">
-                        <span class="asset-label">Gold</span>
+                        <span class="asset-label">Safe Assets</span>
                         <input type="number" class="percentage-input" id="gold_3_3" min="0" max="100" value="20" onchange="updateAllocation(3, 3)">
                         <span>%</span>
                     </div>
@@ -963,7 +983,7 @@
         };
         const assetReturns = {
             1: { tech: -10, ind: -8, gold: 5, intl: 4 },
-            2: { tech: -2, ind: -3, gold: 2, intl: 6 },
+            2: { tech: -3, ind: -2, gold: 3, intl: 6 },
             3: { tech: 6, ind: 5, gold: -3, intl: 2 }
         };
         let charts = {};
@@ -995,7 +1015,7 @@
             const chart = new Chart(ctx, {
                 type: 'pie',
                 data: {
-                    labels: ['Tech Stocks', 'Industrial Stocks', 'Gold', 'International Stocks'],
+                    labels: ['Tech Stocks', 'Industrial Stocks', 'Safe Assets', 'International Stocks'],
                     datasets: [{
                         data: values,
                         backgroundColor: Object.values(assetColors),
@@ -1096,7 +1116,7 @@
             const names = {
                 'tech': 'Tech Stocks',
                 'ind': 'Industrial Stocks',
-                'gold': 'Gold',
+                'gold': 'Safe Assets',
                 'intl': 'International Stocks'
             };
             return names[asset];
